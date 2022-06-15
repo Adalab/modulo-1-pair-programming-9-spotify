@@ -1,28 +1,40 @@
 /* header */
   
 .header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  height: 30px;
+  &__signup {
+    background-color: white;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: black;
+    justify-content: center;
+    height: 30px;   
   }
-  .hero-title {
-    margin-top: 50px;
+}
+.logo {
+  height: 30px;
+  &__signup {
+    filter: opacity(0.4) drop-shadow(0 0 0 black);         
   }
-  .logo {
-    height: 30px;
+}
+.hamb {
+  height: 30px;
+  @media all and (min-width: 768px) {
+   display: none;
+ }
+}  
+.nav{
+  display: none;
+  @media all and (min-width: 768px) {
+    display: block;
   }
-  .nav{
-    display: none;
-    @media all and (min-width: 768px) {
-              display: block;
-        }
-    
-  }
+}  
   .list {
     display: flex;
     justify-content: space-between;
@@ -45,9 +57,4 @@
     color: white;
   }
   
-  @media all and (min-width: 768px) {
-     
-    .hamb{
-      display: none;
-    }
-}
+  
