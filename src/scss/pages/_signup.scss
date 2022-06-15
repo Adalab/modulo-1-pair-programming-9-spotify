@@ -1,0 +1,32 @@
+.title {
+    padding: 30px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    padding-top: 10px;
+}
+.button {
+    width: 100vw;
+    height: 50px;
+    border-radius: 25px;
+    &--blue{
+        background-color: blue;
+        color: white;
+        border-radius: 25px;
+        align-content: center;
+    }
+    &--white{
+        background-color: white;
+        color: black;
+        border-radius: 25px;
+    }
+}
+.img-button {
+    width: 40px;
+    height: 40px;
+}

@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Signup</title>
   <include src="./partials/links.html"></include>
+
 </head>
 
 <body>
@@ -15,11 +16,18 @@
   </header>
   <main>
     <section>
-      <h1>Regístrate gratis para escuchar.</h1>
-      <button>Registrarte con Facebook</button>
-      <button>Registrarte con Google</button>
+      <h1 class="title">Regístrate gratis para escuchar.</h1>
+      <div class="buttons">
+
+        <a class="button button--blue" href="https://es-es.facebook.com/">
+          <img class="img-button" src="./assets/images/logo-facebook.jpg" alt="Logo Facebook" />
+          Registrarte con Facebook</a>
+        <a class="button button--white" href=""><img class="img-button" src="./assets/images/logo-google.png"
+            alt="Logo Google" />Registrarte con
+          Google</a>
+      </div>
     </section>
-    <p>o</p>
+    <p class="separation">o</p>
     <section>
       <h2>Registrate con tu correo electrónico</h2>
       <form action="https://adalab-server-form.herokuapp.com/" method="post">
